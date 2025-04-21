@@ -16,7 +16,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo.png" alt="Dals Arquitetura" width={120} height={40} className="h-10 w-auto" />
+            <Image src="/logo.svg" alt="Dals Arquitetura" width={160} height={80} className="h-10 w-auto" />
           </Link>
           <nav className="hidden md:flex gap-8">
             <Link
@@ -186,27 +186,28 @@ export default function Home() {
                   />
                   <ServiceCard
                     title="Projeto Arquitetônico"
-                    description="Desenvolvimento de projetos arquitetônicos personalizados para atender às necessidades do cliente."
+                    description="Consiste no desenvolvimento técnico e criativo de espaços, baseado em normas, estética e eficiência de uso."
                     icon="FileEdit"
                   />
                   <ServiceCard
                     title="Reforma e Ampliação"
-                    description="Planejamento e execução de reformas e ampliações em imóveis existentes."
+                    description="São intervenções voltadas à modificação e expansão de edificações existentes, buscando mais eficiência, conforto e adequação legal."
                     icon="FileText"
                   />
                   <ServiceCard
                     title="Demolição"
-                    description="Elaboração de projetos de demolição, respeitando as normas e legislações vigentes."
+                    description="É o planejamento técnico para a remoção de estruturas, garantindo segurança e conformidade."
                     icon="FileEdit"
                   />
                   <ServiceCard
                     title="Levantamento cadastral"
-                    description="Levantamento de dados e informações para elaboração de projetos."
+                    description="É o processo de levantamento de informações precisas de terrenos e edificações.
+"
                     icon="FileEdit"
                   />
                   <ServiceCard
                     title="Projeto AsBuilt"
-                    description="Elaboração de projeto AsBuilt, com a representação gráfica do imóvel após a obra."
+                    description="É o projeto que reflete as condições reais de uma edificação."
                     icon="FileEdit"
                   />
                 </div>
@@ -216,7 +217,7 @@ export default function Home() {
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   <ServiceCard
                     title="Anistia"
-                    description="Regularização de construções existentes que não possuem aprovação ou que foram modificadas sem autorização."
+                    description="Regularização de edificações existentes que estão em desacordo com as normas municipais perante a prefeitura."
                     icon="FileCheck"
                   />
                   <ServiceCard
@@ -251,12 +252,12 @@ export default function Home() {
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                   <ServiceCard
                     title="CLCB"
-                    description="Certificado de Licenciamento do Corpo de Bombeiros para edificações de baixo risco."
+                    description="Certificado de Licenciamento do Corpo de Bombeiros."
                     icon="FileCheck"
                   />
                   <ServiceCard
                     title="AVCB"
-                    description="Auto de Vistoria do Corpo de Bombeiros, garantindo que seu imóvel atenda às normas de segurança contra incêndio."
+                    description="Auto de Vistoria do Corpo de Bombeiros."
                     icon="ShieldCheck"
                   />
                   <ServiceCard
@@ -266,7 +267,7 @@ export default function Home() {
                   />
                   <ServiceCard
                     title="FAT"
-                    description="Formulário de Atendimento Técnico para consultas e esclarecimentos junto ao Corpo de Bombeiros."
+                    description="Formulário de Atendimento Técnico utilizado para consultas e esclarecimentos com o Corpo de Bombeiros."
                     icon="FileQuestion"
                   />
                 </div>
@@ -276,12 +277,12 @@ export default function Home() {
                 <div className="grid gap-6 sm:grid-cols-2">
                   <ServiceCard
                     title="Certidão de Negativa"
-                    description="Obtenção de certidões negativas necessárias para processos de regularização imobiliária."
+                    description="Obtenção de certidões negativas que comprovam a inexistência de débitos, pendências ou irregularidades em nome de pessoa física ou jurí."
                     icon="FileText"
                   />
                   <ServiceCard
                     title="Averbação de Matrícula"
-                    description="Regularização e averbação de construções na matrícula do imóvel junto ao cartório de registro."
+                    description="Averbação de construções na matrícula do imóvel junto ao cartório de registro."
                     icon="FileEdit"
                   />
                 </div>
@@ -358,7 +359,7 @@ export default function Home() {
                   <ul className="space-y-6">
                     <li className="flex items-start">
                       <Phone className="mr-3 h-5 w-5 text-secondary" />
-                      <span>(00) 0000-0000</span>
+                      <span>(11) 97687-8467</span>
                     </li>
                     <li className="flex items-start">
                       <Mail className="mr-3 h-5 w-5 text-secondary" />
@@ -367,9 +368,9 @@ export default function Home() {
                     <li className="flex items-start">
                       <MapPin className="mr-3 h-5 w-5 text-secondary" />
                       <span>
-                        Av. Principal, 1000 - Centro
+                        Rua Endres, 973
                         <br />
-                        Cidade - Estado, 00000-000
+                        Guarulhos- São Paulo, 07043-000
                       </span>
                     </li>
                   </ul>
@@ -495,7 +496,7 @@ export default function Home() {
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-secondary" />
-                  <span className="text-sm text-gray-300">(00) 0000-0000</span>
+                  <span className="text-sm text-gray-300">(11) 97687-8467</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-secondary" />
