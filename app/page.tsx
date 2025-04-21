@@ -106,13 +106,12 @@ export default function Home() {
                 <h2 className="text-3xl font-light text-[#2A384C] mb-6">Sobre Nós</h2>
                 <div className="space-y-4 text-[#2A384C]/80">
                   <p>
-                    A Dals Arquitetura é especializada em regularização imobiliária, oferecendo soluções completas para
-                    aprovação de projetos e documentação de imóveis residenciais e comerciais.
+                  Fundada para oferecer excelência a quem busca criatividade, autenticidade e simplicidade em projetos e processos. Nos comprometemos a superar
+ expectativas, refletindo a singularidade de nossos clientes.
                   </p>
                   <p>
-                    Fundada pelas arquitetas Débora e Andrezza, nossa empresa combina experiência técnica, conhecimento
-                    aprofundado da legislação e compromisso com a excelência para garantir que seu imóvel esteja
-                    totalmente regularizado.
+                  Nossa equipe é formada por arquitetas e urbanistas, que atuam no mercado de arquitetura e regularização atendendo os clientes com empatia,
+ qualidade e agilidade.
                   </p>
                 </div>
 
