@@ -98,26 +98,24 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-         {/* About Section */}
-         <section id="sobre" className="py-24 bg-[#F0F0EA]">
+         <section id="sobre" className="py-24 bg-[#F0F0F0]">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="text-3xl font-light text-[#2A384C] mb-6">Sobre Nós</h2>
                 <div className="space-y-4 text-[#2A384C]/80">
                   <p>
-                    A Dals Arquitetura é especializada em regularização imobiliária, oferecendo soluções completas para
-                    aprovação de projetos e documentação de imóveis residenciais e comerciais.
+                  Fundada para oferecer excelência a quem busca criatividade, autenticidade e simplicidade em projetos e processos. Nos comprometemos a superar
+ expectativas, refletindo a singularidade de nossos clientes.
                   </p>
                   <p>
-                    Fundada pelas arquitetas Débora e Andrezza, nossa empresa combina experiência técnica, conhecimento
-                    aprofundado da legislação e compromisso com a excelência para garantir que seu imóvel esteja
-                    totalmente regularizado.
+                  Nossa equipe é formada por arquitetas e urbanistas, que atuam no mercado de arquitetura e regularização atendendo os clientes com empatia,
+ qualidade e agilidade.
                   </p>
                 </div>
 
                 <div className="mt-10">
-                  <h3 className="text-xl font-medium text-[#2A384C] mb-4">Nossos Valores</h3>
+                  <h3 className="text-xl font-medium text-secondary mb-4">Nossos Valores</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <CheckCircle className="mr-2 h-5 w-5 text-secondary flex-shrink-0" />
@@ -139,38 +137,15 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-6">
-                <div className="space-y-6">
-                  <div className="overflow-hidden rounded-md bg-white p-2 shadow-md">
-                    <div className="aspect-[3/4] relative overflow-hidden rounded-md">
-                      <Image
-                        src="/placeholder.svg?height=600&width=450&text=Débora"
-                        alt="Arquiteta Débora"
-                        fill
-                        className="object-cover transition-transform duration-300 hover:scale-105"
-                      />
-                    </div>
-                    <div className="p-4 text-center">
-                      <h4 className="font-medium text-[#2A384C]">Débora</h4>
-                      <p className="text-sm text-[#2A384C]/70">Arquiteta e Urbanista</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-6 mt-12">
-                  <div className="overflow-hidden rounded-md bg-white p-2 shadow-md">
-                    <div className="aspect-[3/4] relative overflow-hidden rounded-md">
-                      <Image
-                        src="/placeholder.svg?height=600&width=450&text=Andrezza"
-                        alt="Arquiteta Andrezza"
-                        fill
-                        className="object-cover transition-transform duration-300 hover:scale-105"
-                      />
-                    </div>
-                    <div className="p-4 text-center">
-                      <h4 className="font-medium text-[#2A384C]">Andrezza</h4>
-                      <p className="text-sm text-[#2A384C]/70">Arquiteta e Urbanista</p>
-                    </div>
+              <div className="flex justify-center">
+                <div className="max-w-xl w-full overflow-hidden rounded-sm bg-white p-0">
+                  <div className="aspect-[4/3] relative overflow-hidden rounded-sm">
+                    <Image
+                      src="/assets/pexels-pixapexel-28287647.jpg"
+                      alt="Escritorio de arquitetura"
+                      fill
+                      className="object-cover transition-transform duration-300 hover:scale-105"
+                    />
                   </div>
                 </div>
               </div>
@@ -192,13 +167,50 @@ export default function Home() {
             </div>
 
             <Tabs defaultValue="prefeitura" className="mt-16">
+
               <div className="flex justify-center">
-                <TabsList className="grid w-full max-w-md grid-cols-3">
+                <TabsList className="grid w-full max-w-md grid-cols-4">
+                  <TabsTrigger value="arquitetura">Arquitetura</TabsTrigger>
                   <TabsTrigger value="prefeitura">Prefeitura</TabsTrigger>
                   <TabsTrigger value="bombeiro">Bombeiro</TabsTrigger>
                   <TabsTrigger value="cartorio">Cartório</TabsTrigger>
                 </TabsList>
               </div>
+
+              <TabsContent value="arquitetura" className="mt-8">
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  <ServiceCard
+                    title="Acessibilidade"
+                    description="Projetos de acessibilidade para garantir o uso adequado e seguro do espaço por todos."
+                    icon="FileText"
+                  />
+                  <ServiceCard
+                    title="Projeto Arquitetônico"
+                    description="Desenvolvimento de projetos arquitetônicos personalizados para atender às necessidades do cliente."
+                    icon="FileEdit"
+                  />
+                  <ServiceCard
+                    title="Reforma e Ampliação"
+                    description="Planejamento e execução de reformas e ampliações em imóveis existentes."
+                    icon="FileText"
+                  />
+                  <ServiceCard
+                    title="Demolição"
+                    description="Elaboração de projetos de demolição, respeitando as normas e legislações vigentes."
+                    icon="FileEdit"
+                  />
+                  <ServiceCard
+                    title="Levantamento cadastral"
+                    description="Levantamento de dados e informações para elaboração de projetos."
+                    icon="FileEdit"
+                  />
+                  <ServiceCard
+                    title="Projeto AsBuilt"
+                    description="Elaboração de projeto AsBuilt, com a representação gráfica do imóvel após a obra."
+                    icon="FileEdit"
+                  />
+                </div>
+              </TabsContent>
 
               <TabsContent value="prefeitura" className="mt-8">
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -279,10 +291,10 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contato" className="bg-[#f0f0ea] py-20">
+        <section id="contato" className="bg-primary py-20">
           <div className="container">
             <div className="mx-auto max-w-3xl text-center">
-              <h2 className="text-3xl font-light tracking-tight text-[#23384c]">
+              <h2 className="text-3xl font-light tracking-tight text-secondary">
                 Entre em <span className="font-medium">Contato</span>
               </h2>
               <p className="mt-4 text-muted-foreground">
@@ -291,7 +303,7 @@ export default function Home() {
             </div>
             <div className="mt-16 grid gap-8 lg:grid-cols-2">
               <div className="bg-white p-8 rounded-md shadow-sm">
-                <h3 className="text-xl font-medium text-[#23384c] mb-6">Envie uma mensagem</h3>
+                <h3 className="text-xl font-medium text-secondary mb-6">Envie uma mensagem</h3>
                 <form className="grid gap-6">
                   <div className="grid gap-3">
                     <label htmlFor="name" className="text-sm font-medium">
@@ -335,7 +347,7 @@ export default function Home() {
                     </label>
                     <Textarea id="message" placeholder="Descreva seu projeto ou dúvida" className="min-h-[120px]" />
                   </div>
-                  <Button type="submit" className="w-full bg-[#0ab2c2] hover:bg-[#0ab2c2]/90 text-white">
+                  <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90 text-white">
                     Enviar Mensagem
                   </Button>
                 </form>
@@ -345,15 +357,15 @@ export default function Home() {
                   <h3 className="text-xl font-medium text-[#23384c] mb-6">Informações de Contato</h3>
                   <ul className="space-y-6">
                     <li className="flex items-start">
-                      <Phone className="mr-3 h-5 w-5 text-[#0ab2c2]" />
+                      <Phone className="mr-3 h-5 w-5 text-secondary" />
                       <span>(00) 0000-0000</span>
                     </li>
                     <li className="flex items-start">
-                      <Mail className="mr-3 h-5 w-5 text-[#0ab2c2]" />
+                      <Mail className="mr-3 h-5 w-5 text-secondary" />
                       <span>contato@dalsarquitetura.com.br</span>
                     </li>
                     <li className="flex items-start">
-                      <MapPin className="mr-3 h-5 w-5 text-[#0ab2c2]" />
+                      <MapPin className="mr-3 h-5 w-5 text-secondary" />
                       <span>
                         Av. Principal, 1000 - Centro
                         <br />
@@ -365,7 +377,7 @@ export default function Home() {
                   <div className="mt-8">
                     <h4 className="text-lg font-medium text-[#23384c] mb-4">Redes Sociais</h4>
                     <div className="flex space-x-4">
-                      <Link href="#" className="text-muted-foreground hover:text-[#0ab2c2] transition-colors">
+                      <Link href="#" className="text-muted-foreground hover:text-secondary transition-colors">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -382,7 +394,7 @@ export default function Home() {
                         </svg>
                         <span className="sr-only">Facebook</span>
                       </Link>
-                      <Link href="#" className="text-muted-foreground hover:text-[#0ab2c2] transition-colors">
+                      <Link href="#" className="text-muted-foreground hover:text-secondary transition-colors">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -401,7 +413,7 @@ export default function Home() {
                         </svg>
                         <span className="sr-only">Instagram</span>
                       </Link>
-                      <Link href="#" className="text-muted-foreground hover:text-[#0ab2c2] transition-colors">
+                      <Link href="#" className="text-muted-foreground hover:text-secondary transition-colors">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -457,22 +469,22 @@ export default function Home() {
               <h3 className="text-lg font-medium mb-4">Links Rápidos</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#inicio" className="text-sm text-gray-300 hover:text-[#0ab2c2] transition-colors">
+                  <Link href="#inicio" className="text-sm text-gray-300 hover:text-secondary transition-colors">
                     Início
                   </Link>
                 </li>
                 <li>
-                  <Link href="#sobre" className="text-sm text-gray-300 hover:text-[#0ab2c2] transition-colors">
+                  <Link href="#sobre" className="text-sm text-gray-300 hover:text-secondary transition-colors">
                     Sobre Nós
                   </Link>
                 </li>
                 <li>
-                  <Link href="#servicos" className="text-sm text-gray-300 hover:text-[#0ab2c2] transition-colors">
+                  <Link href="#servicos" className="text-sm text-gray-300 hover:text-secondary transition-colors">
                     Serviços
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contato" className="text-sm text-gray-300 hover:text-[#0ab2c2] transition-colors">
+                  <Link href="#contato" className="text-sm text-gray-300 hover:text-secondary transition-colors">
                     Contato
                   </Link>
                 </li>
@@ -482,11 +494,11 @@ export default function Home() {
               <h3 className="text-lg font-medium mb-4">Contato</h3>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-[#0ab2c2]" />
+                  <Phone className="h-4 w-4 text-secondary" />
                   <span className="text-sm text-gray-300">(00) 0000-0000</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-[#0ab2c2]" />
+                  <Mail className="h-4 w-4 text-secondary" />
                   <span className="text-sm text-gray-300">contato@dalsarquitetura.com.br</span>
                 </li>
               </ul>
