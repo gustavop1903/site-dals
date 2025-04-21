@@ -68,10 +68,10 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section id="inicio" className="relative">
+        <section id="inicio" className="relative min-h-[85vh]">
           <div className="absolute inset-0">
             <Image
-              src="/placeholder.svg?height=1080&width=1920"
+              src="/assets/pexels-brett-sayles-7666332.jpg"
               alt="Imagem de arquitetura moderna"
               fill
               className="object-cover"
@@ -84,10 +84,11 @@ export default function Home() {
               <span className="font-medium">DALS</span> ARQUITETURA
             </h1>
             <p className="mt-6 max-w-lg text-lg text-gray-200 font-light">
-              Soluções completas em regularização imobiliária com excelência técnica e compromisso com resultados.
+              Soluções em Arquitetura e Regularização Imobiliária
+              Projetamos, legalizamos e transformamos seu espaço.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Button size="lg" className="bg-[#0ab2c2] hover:bg-[#0ab2c2]/90 text-white" asChild>
+              <Button size="lg" className="bg-primary text-secondary" asChild>
                 <Link href="#servicos">
                   Nossos Serviços <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -119,19 +120,19 @@ export default function Home() {
                   <h3 className="text-xl font-medium text-[#2A384C] mb-4">Nossos Valores</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
-                      <CheckCircle className="mr-2 h-5 w-5 text-[#0AB2C2] flex-shrink-0" />
+                      <CheckCircle className="mr-2 h-5 w-5 text-secondary flex-shrink-0" />
                       <span>Excelência técnica e atendimento personalizado</span>
                     </li>
                     <li className="flex items-start">
-                      <CheckCircle className="mr-2 h-5 w-5 text-[#0AB2C2] flex-shrink-0" />
+                      <CheckCircle className="mr-2 h-5 w-5 text-secondary flex-shrink-0" />
                       <span>Transparência e comunicação clara em todas as etapas</span>
                     </li>
                     <li className="flex items-start">
-                      <CheckCircle className="mr-2 h-5 w-5 text-[#0AB2C2] flex-shrink-0" />
+                      <CheckCircle className="mr-2 h-5 w-5 text-secondary flex-shrink-0" />
                       <span>Compromisso com prazos e resultados</span>
                     </li>
                     <li className="flex items-start">
-                      <CheckCircle className="mr-2 h-5 w-5 text-[#0AB2C2] flex-shrink-0" />
+                      <CheckCircle className="mr-2 h-5 w-5 text-secondary flex-shrink-0" />
                       <span>Ética profissional e responsabilidade</span>
                     </li>
                   </ul>
@@ -516,7 +517,7 @@ function ServiceCard({ title, description, icon }) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-6 w-6 text-[#0ab2c2]"
+        className="h-6 w-6 text-secondary"
       >
         <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
         <polyline points="14 2 14 8 20 8" />
@@ -534,7 +535,7 @@ function ServiceCard({ title, description, icon }) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-6 w-6 text-[#0ab2c2]"
+        className="h-6 w-6 text-secondary"
       >
         <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
         <polyline points="14 2 14 8 20 8" />
@@ -554,7 +555,7 @@ function ServiceCard({ title, description, icon }) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-6 w-6 text-[#0ab2c2]"
+        className="h-6 w-6 text-secondary"
       >
         <circle cx="12" cy="8" r="6" />
         <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
@@ -571,7 +572,7 @@ function ServiceCard({ title, description, icon }) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-6 w-6 text-[#0ab2c2]"
+        className="h-6 w-6 text-secondary"
       >
         <rect width="14" height="18" x="5" y="3" rx="2" />
         <path d="M15 3h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2" />
@@ -588,7 +589,7 @@ function ServiceCard({ title, description, icon }) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-6 w-6 text-[#0ab2c2]"
+        className="h-6 w-6 text-secondary"
       >
         <circle cx="6" cy="6" r="3" />
         <circle cx="6" cy="18" r="3" />
@@ -608,7 +609,7 @@ function ServiceCard({ title, description, icon }) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-6 w-6 text-[#0ab2c2]"
+        className="h-6 w-6 text-secondary"
       >
         <circle cx="11" cy="11" r="8" />
         <line x1="21" x2="16.65" y1="21" y2="16.65" />
@@ -625,7 +626,7 @@ function ServiceCard({ title, description, icon }) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-6 w-6 text-[#0ab2c2]"
+        className="h-6 w-6 text-secondary"
       >
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
         <path d="m9 12 2 2 4-4" />
@@ -642,7 +643,7 @@ function ServiceCard({ title, description, icon }) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-6 w-6 text-[#0ab2c2]"
+        className="h-6 w-6 text-secondary"
       >
         <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
       </svg>
@@ -658,7 +659,7 @@ function ServiceCard({ title, description, icon }) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-6 w-6 text-[#0ab2c2]"
+        className="h-6 w-6 text-secondary"
       >
         <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
         <path d="M10 10.3c.2-.4.5-.8.9-1a2.1 2.1 0 0 1 2.6.4c.3.4.5.8.5 1.3 0 1.3-2 2-2 2" />
@@ -676,7 +677,7 @@ function ServiceCard({ title, description, icon }) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-6 w-6 text-[#0ab2c2]"
+        className="h-6 w-6 text-secondary"
       >
         <path d="M4 13.5V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2h-5.5" />
         <polyline points="14 2 14 8 20 8" />
