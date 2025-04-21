@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Mail, MapPin, Phone, CheckCircle } from "lucide-react"
-// import { Mail, MapPin, Phone, ArrowRight,  } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -11,35 +10,35 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">``
+    <div className="flex min-h-screen flex-col">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo.svg" alt="Dals Arquitetura" width={160} height={80} className="h-10 w-auto" />
+            <Image src="/assets/logos/logo.svg" alt="Dals Arquitetura" width={120} height={60} className="h-12 w-auto" />
           </Link>
           <nav className="hidden md:flex gap-8">
             <Link
               href="#inicio"
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium text-secondary hover:text-primary transition-colors"
             >
               Início
             </Link>
             <Link
               href="#sobre"
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium text-secondary hover:text-primary transition-colors"
             >
               Sobre Nós
             </Link>
             <Link
               href="#servicos"
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium text-secondary hover:text-primary transition-colors"
             >
               Serviços
             </Link>
             <Link
               href="#contato"
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium text-secondary hover:text-primary transition-colors"
             >
               Contato
             </Link>
@@ -136,15 +135,16 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-
               <div className="flex justify-center">
-                <div className="max-w-xl w-full overflow-hidden rounded-sm bg-white p-0">
-                  <div className="aspect-[4/3] relative overflow-hidden rounded-sm">
+                <div className="max-w-md w-full overflow-hidden bg-white p-0">
+                  <div className="aspect-[4/3] relative overflow-hidden">
                     <Image
-                      src="/assets/pexels-pixapexel-28287647.jpg"
+                      // src="/assets/pexels-pixapexel-28287647.jpg"
+                      src="/assets/pexels-juan-pablo-daniel-2151143420-31570248.jpg"
                       alt="Escritorio de arquitetura"
                       fill
-                      className="object-cover transition-transform duration-300 hover:scale-105"
+                      // className="object-cover transition-transform duration-300 grayscale hover:scale-105"
+                      className="object-cover object-bottom transition-transform duration-300 grayscale hover:scale-105"
                     />
                   </div>
                 </div>
@@ -440,7 +440,7 @@ export default function Home() {
                 <div className="overflow-hidden rounded-md shadow-sm h-[300px] bg-white">
                   <iframe
                     title="Localização da Dals Arquitetura"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.3566310122!2d-43.17916!3d-22.90278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDA1JzEwLjAiUyA0M8KwMTAnNDUuMCJX!5e0!3m2!1spt-BR!2sbr!4v1616501323920!5m2!1spt-BR!2sbr"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.453335537573!2d-46.55421642369423!3d-23.48474315941627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f81033b9ea3%3A0xee71b648381aae59!2sR.%20Endres%20-%20Vila%20das%20Bandeiras%2C%20Guarulhos%20-%20SP%2C%2007043-000!5e0!3m2!1spt-BR!2sbr!4v1713632600000!5m2!1spt-BR!2sbr"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -460,7 +460,7 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-3">
             <div>
               <Link href="/" className="flex items-center gap-2">
-                <Image src="/logo-white.png" alt="Dals Arquitetura" width={120} height={40} className="h-10 w-auto" />
+                <Image src="/assets/logos/logoW.svg" alt="Dals Arquitetura" width={120} height={40} className="h-16 w-auto" />
               </Link>
               <p className="mt-4 text-sm text-gray-300">
                 Soluções completas em regularização imobiliária, com profissionalismo e excelência técnica.

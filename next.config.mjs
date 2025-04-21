@@ -1,6 +1,6 @@
 let userConfig = undefined
 try {
-  userConfig = await import('./v0-user-next.config')
+  userConfig = await import('./dals-user-next.config.ts')
 } catch (e) {
   // ignore error
 }
