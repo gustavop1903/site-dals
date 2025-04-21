@@ -11,7 +11,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col">``
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
@@ -504,7 +504,7 @@ export default function Home() {
 }
 
 // Service Card Component
-function ServiceCard({ title, description, icon }) {
+function ServiceCard({ title, description, icon }) {``
   const icons = {
     FileCheck: (
       <svg
