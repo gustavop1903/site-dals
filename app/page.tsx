@@ -378,7 +378,7 @@ export default function Home() {
                   <div className="mt-8">
                     <h4 className="text-lg font-medium text-[#23384c] mb-4">Redes Sociais</h4>
                     <div className="flex space-x-4">
-                      <Link href="#" className="text-muted-foreground hover:text-secondary transition-colors">
+                      <Link href="https://www.facebook.com/profile.php?id=100063808729662" className="text-muted-foreground hover:text-secondary transition-colors">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -395,7 +395,7 @@ export default function Home() {
                         </svg>
                         <span className="sr-only">Facebook</span>
                       </Link>
-                      <Link href="#" className="text-muted-foreground hover:text-secondary transition-colors">
+                      <Link href="https://www.instagram.com/dals.arq?igsh=ODhnd3BndTB0MmJ6" className="text-muted-foreground hover:text-secondary transition-colors">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -414,7 +414,7 @@ export default function Home() {
                         </svg>
                         <span className="sr-only">Instagram</span>
                       </Link>
-                      <Link href="#" className="text-muted-foreground hover:text-secondary transition-colors">
+                      <Link href="https://www.linkedin.com/company/dals-arquitetura/" className="text-muted-foreground hover:text-secondary transition-colors">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
