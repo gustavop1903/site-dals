@@ -455,7 +455,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#23384c] text-white py-12">
+      <footer className="bg-secondary text-white py-12">
         <div className="container">
           <div className="grid gap-8 md:grid-cols-3">
             <div>
