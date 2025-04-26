@@ -15,7 +15,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/assets/logos/logo.svg" alt="Dals Arquitetura" width={120} height={60} className="h-12 w-auto" />
+            <Image src="/assets/logos/logo.svg" alt="Dals Arquitetura" width={120} height={60} className="h-14 w-auto" />
           </Link>
           <nav className="hidden md:flex gap-8">
             <Link
@@ -378,7 +378,7 @@ export default function Home() {
                   <div className="mt-8">
                     <h4 className="text-lg font-medium text-[#23384c] mb-4">Redes Sociais</h4>
                     <div className="flex space-x-4">
-                      <Link href="#" className="text-muted-foreground hover:text-secondary transition-colors">
+                      <Link href="https://www.facebook.com/profile.php?id=100063808729662" className="text-muted-foreground hover:text-secondary transition-colors">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -395,7 +395,7 @@ export default function Home() {
                         </svg>
                         <span className="sr-only">Facebook</span>
                       </Link>
-                      <Link href="#" className="text-muted-foreground hover:text-secondary transition-colors">
+                      <Link href="https://www.instagram.com/dals.arq?igsh=ODhnd3BndTB0MmJ6" className="text-muted-foreground hover:text-secondary transition-colors">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -414,7 +414,7 @@ export default function Home() {
                         </svg>
                         <span className="sr-only">Instagram</span>
                       </Link>
-                      <Link href="#" className="text-muted-foreground hover:text-secondary transition-colors">
+                      <Link href="https://www.linkedin.com/company/dals-arquitetura/" className="text-muted-foreground hover:text-secondary transition-colors">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -437,7 +437,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="overflow-hidden rounded-md shadow-sm h-[300px] bg-white">
+                <div className="overflow-hidden rounded-md shadow-sm h-[350px] bg-white">
                   <iframe
                     title="Localização da Dals Arquitetura"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.453335537573!2d-46.55421642369423!3d-23.48474315941627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f81033b9ea3%3A0xee71b648381aae59!2sR.%20Endres%20-%20Vila%20das%20Bandeiras%2C%20Guarulhos%20-%20SP%2C%2007043-000!5e0!3m2!1spt-BR!2sbr!4v1713632600000!5m2!1spt-BR!2sbr"
@@ -460,7 +460,7 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-3">
             <div>
               <Link href="/" className="flex items-center gap-2">
-                <Image src="/assets/logos/logoW.svg" alt="Dals Arquitetura" width={120} height={40} className="h-16 w-auto" />
+                <Image src="/assets/logos/logow.svg" alt="Dals Arquitetura" width={120} height={40} className="h-16 w-auto" />
               </Link>
               <p className="mt-4 text-sm text-gray-300">
                 Soluções completas em regularização imobiliária, com profissionalismo e excelência técnica.

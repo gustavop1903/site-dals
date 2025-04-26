@@ -1,9 +1,10 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, Ovo} from "next/font/google"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
+const ovo = Ovo({ weight: '400', subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Dals Arquitetura & Regularização Imobiliária",
@@ -76,7 +77,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={ovo.className}>{children}</body>
     </html>
   )
 }
